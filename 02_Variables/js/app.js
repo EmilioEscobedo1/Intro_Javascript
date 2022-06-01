@@ -7,3 +7,9 @@ let edad;
 nombreCompleto = prompt('Digita tu nombre completo');
 anioActual = prompt('Digita el año actual');
 anioNacimiento = prompt('Digita el año de tu nacimiento');
+
+//Tercer paso: Desarrollo de la logica 
+edad = anioActual - anioNacimiento;
+
+//Cuarto paso: Mostrar los resultados;
+document.write('Hola ' + nombreCompleto + ', tu edad aproximada es: '+ edad);
