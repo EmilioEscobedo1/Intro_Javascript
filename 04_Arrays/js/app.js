@@ -16,3 +16,14 @@ console.log(miArray)
 
 //eliminar el ultimo elemento del array
 miArray.pop();
+console.log(miArray);
+
+//eliminar el primer elemento del array
+miArray.shift()
+console.log(miArray)
+
+//extraer palabras de un string y convertirlas en un array
+let nombreCompleto = 'Emilio Escobedo Inzunza';
+let arrgeloNombre = nombreCompleto.split(' ');
+console.log(arrgeloNombre);
+
