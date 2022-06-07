@@ -23,7 +23,27 @@ miArray.shift()
 console.log(miArray)
 
 //extraer palabras de un string y convertirlas en un array
-let nombreCompleto = 'Emilio Escobedo Inzunza';
-let arrgeloNombre = nombreCompleto.split(' ');
-console.log(arrgeloNombre);
+let nombreCompleto = 'Emilio Andres Escobedo Inzunza';
+let arregloNombre = nombreCompleto.split(' ');
+console.log(arregloNombre);
 
+//eliminar elementos de un array a partir de su indice
+let arregloApellidos = arregloNombre.slice(2);
+console.log(arregloApellidos);
+let arregloPrimerApellido = arregloNombre.slice(2,2);
+console.log(arregloPrimerApellido);
+
+//agregar elementos al array en una posicion especifica y reemplazar si queremos
+arregloApellidos.splice(1,1, arregloNombre);
+console.log(arregloApellidos);
+
+//ordenar los elementos de un array alfabeticamente
+let arrayOrdenado = arregloNombre.sort();
+console.log(arrayOrdenado);
+
+//modificar el array a la inversa
+arrayOrdenado.reverse();
+console.log(arrayOrdenado);
+
+let arregloConcatenado = arregloNombre.concat(arrayOrdenado, arregloApellidos);
+console.log(arregloConcatenado);
