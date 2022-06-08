@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+    width: 120px;
+    
+}
+.circulo_rojo {
+    background-color: red;
+    border-radius: 1000px;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.circulo_amarillo {
+    background-color: yellow;
+    border-radius: 1000px;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+.circulo_verde {
+    background-color: green;
+    border-radius: 1000px;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
