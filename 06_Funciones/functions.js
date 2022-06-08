@@ -1,11 +1,20 @@
 saludar();
 
 //funcion declaration - declaracion de funcion
-function saludar() {
-    console.log('Hola Oliver');
+function saludar(nombre) {
+    console.log(`Hola + ${apellidoPaterno} ${apellidoMaterno} ${nombreCompleto}`);
 }
 
-saludar();
+saludar("Juan", "Perez", "Lopez");
+
+
+
+
+
 
 //function expression - exprecion de funcion 
-var saludar = function() {};
+const saludar = function() {};
+
+//azucar sintactica
+//arrow function
+const saludar = () => {};
