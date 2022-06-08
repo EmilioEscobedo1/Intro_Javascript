@@ -1,30 +1,21 @@
-.main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: grey;
-    width: 120px;
-    
+#traffic-signal{
+    border: 8px solid black;
+    padding: 10px 3px;
+    width: 50px;
+    border-radius: 50px;
 }
-.circulo_rojo {
-    background-color: red;
-    border-radius: 1000px;
-    height: 100px;
-    width: 100px;
-    margin-top: 10px;
+#traffic-signal > div{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: .3;
 }
-
-.circulo_amarillo {
-    background-color: yellow;
-    border-radius: 1000px;
-    height: 100px;
-    width: 100px;
-    margin-top: 10px;
-}
-.circulo_verde {
+#verde{
     background-color: green;
-    border-radius: 1000px;
-    height: 100px;
-    width: 100px;
-    margin-top: 10px;
+}
+#amarillo{
+    background-color: yellow;
+}
+#rojo{
+    background-color: red;
 }
