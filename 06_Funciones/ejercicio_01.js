@@ -1,5 +1,5 @@
 // La suma de dos valores
-const sumaDeDosValores = function (primerNumero, segundoNumero) {
+const suma = function (primerNumero, segundoNumero) {
     return primerNumero + segundoNumero;
 };
 
