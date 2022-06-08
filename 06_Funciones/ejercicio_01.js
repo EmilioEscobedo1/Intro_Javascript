@@ -4,6 +4,7 @@ const suma = function (primerNumero, segundoNumero) {
 };
 
 console.log(suma());
+
 // La resta de dos valores
 // La multiplicacion de dos valores
 // La division de dos valores
