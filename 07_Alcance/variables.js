@@ -1,7 +1,16 @@
-var edad = 28;
+// var edad = 28;
+
+// if (edad >= 18) {
+//     var mensaje = 'Es mayor de edad';
+// }
+
+// console.log(mensaje)
+
+let edad = 28;
 
 if (edad >= 18) {
-    var mensaje = 'Es mayor de edad';
+    let mensaje = 'Es mayor de edad';
+    console.log(mensaje)
 }
-
-console.log(mensaje)
+    
+    
