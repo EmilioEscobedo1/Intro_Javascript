@@ -13,8 +13,13 @@ const gato = {
 
 console.log(gato.edad);
 console.log(gato["edad"]);
+
 console.log(gato.vacunas.triplefelina.toUpperCase());
 console.log(gato?.vacunas?.influenza?.toUpperCase());
+
+console.log(gato.nombre)
+
+
 
 
 
