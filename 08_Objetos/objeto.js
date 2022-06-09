@@ -1,15 +1,20 @@
 const gato = {
-    nombre: "Alfa",
-    alias: "Peluchin",
+    nombre: "alfa",
+    alias: "peluchin",
     apodo: "gato bola",
     raza: "Siames",
     edad: 6,
     color: ["blanco", "gris"],
-    vacunas: {};
+    vacunas: {
+        triplefelina: "true",
+        rabia: "false",
+    },
 };
 
 console.log(gato.edad);
 console.log(gato["edad"]);
+console.log(gato.vacunas.triplefelina.toUpperCase());
+console.log(gato?.vacunas?.influenza?.toUpperCase());
 
 
 
