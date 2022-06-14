@@ -91,5 +91,5 @@ function ganador(respuestas){
 
             break;
         }  
-
-
+    }
+}
