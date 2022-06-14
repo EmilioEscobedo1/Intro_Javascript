@@ -25,3 +25,12 @@ body {
 .visible {
     display: block;
 }
+.seleccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.seleccion a img{
+    height: 100px;
+}

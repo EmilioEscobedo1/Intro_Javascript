@@ -17,3 +17,6 @@ Requerimientos del juego
 6. Al final mostrar el nombre del campeon
 
 7. Si empatan se muestra empate y ya.
+
+8. Cada jugador elige su respuesta por turno
+    Jugador 1 siempre sera primero
