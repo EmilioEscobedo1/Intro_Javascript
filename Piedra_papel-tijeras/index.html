@@ -15,20 +15,21 @@
     <main id="contenedor">
         <div class="cajacentro">
             <!-- Panel para obtener los nombres de los jugadores y dar inicio al juego. -->
-            <section id="inicio">
+            <section id="inicio" class="visible">
                 <label for="jugador1">Nombre del jugador 1</label>
                 <input id="jugador1" type="text">
                 <br>
                 <label for="jugador2">Nombre del jugador 2</label>
                 <input id="jugador2" type="text">
-                <button onclick="inciar()">Iniciar</button>
+                <br>
+                <button onclick="iniciar()">Iniciar</button>
             </section>
             <!-- Panel para la ejecucion de las rondas del juego -->
-            <section id="rondas">
-
+            <section id="rondas" class="invisible">
+                <h2>Panel de rondas</h2>
             </section>
             <!-- Muestra el ganador de cada ronda y del juego -->
-            <section id="resultados">
+            <section id="resultados" class="invisible">
 
             </section>
         </div>

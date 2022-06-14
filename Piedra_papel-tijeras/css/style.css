@@ -8,3 +8,20 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
+.cajacentro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12% auto !important;
+    width: 450px;
+    height: 100%;
+    background-color: #ffffff;
+    padding:3%;
+}
+    
+.invisible {
+    display: none;
+}
+.visible {
+    display: block;
+}
