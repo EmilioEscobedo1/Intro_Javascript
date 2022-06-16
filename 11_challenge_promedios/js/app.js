@@ -1,3 +1,4 @@
+
 let planilla = document.getElementById('planilla');
 
 function generar(){
@@ -21,6 +22,7 @@ function generar(){
                     titulo = document.createTextNode('Estudiante');
                 }else if(j===notas + 3){ //columna de definitva
                     titulo = document.createTextNode('Def');
+                    planilla.setAttribute("border","2");
                 }else{
                     titulo = document.createTextNode('Nota ' + (j - 2));
                 }
@@ -38,10 +40,13 @@ function generar(){
 
                 if(j===1){ //esta es la columna de orden
                      elemento = document.createTextNode(i - 1);
+
                 }else if(j===notas + 3){ //columna de definitva
                     elemento = document.createElement('span');
+                    elemento.setAttribute('id','p'+(i-1));
                 }else{
                     elemento = document.createElement('input');
+                    elemento.setAttribute('id','n'+ (j-2) + 'e' + (i-1));
                 }
 
                 td.appendChild(elemento);
@@ -52,3 +57,40 @@ function generar(){
         }
     }
 }
+
+function calcular(){
+        let sumaGeneral = 0;
+        let promedioGeneral;
+    
+        let alumnos = Number(document.getElementById('alumnos').value);
+        let notas = Number(document.getElementById('notas').value);
+    
+        //leemos los estudiantes de la tabla
+        for(let i=2; i<=alumnos+1; i++){
+            let suma = 0;
+            let promedio = 0;
+    
+            //leemos las notas del estudiante en cada fila
+            for(let j=3; j<=notas+3; j++){
+                if(j===notas+3){
+                    //calculamos el promedio
+                    promedio = suma / notas;
+    
+                    //sumo a la suma general
+                    sumaGeneral = sumaGeneral + promedio;
+    
+                    document.getElementById('p'+(i-1)).innerText = promedio.toFixed(2);
+                }
+                else{
+                    //capturamos la nota de la columna actual
+                    suma = suma + Number(document.getElementById('n'+ (j-2) + 'e' + (i-1)).value);
+                }
+            }
+        }
+    
+        //calculo promedio general
+        promedioGeneral = sumaGeneral / alumnos;
+    
+        document.getElementById('promedioGen').innerText = `El promedio general del grupo es ${promedioGeneral.toFixed(2)}`;
+}
+       
